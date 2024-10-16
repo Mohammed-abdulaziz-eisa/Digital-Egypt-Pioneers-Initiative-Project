@@ -16,7 +16,7 @@ app = Flask(__name__)
 model = tf.keras.models.load_model('model/text_classification_model.h5')
 
 # Load the tokenizer
-with open('static/tokenizer.pickle', 'rb') as handle:
+with open('model/tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 # Load data to create label map
